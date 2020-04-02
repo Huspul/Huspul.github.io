@@ -1,9 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title></title>
+    <meta charset="utf-8">
+    <title>Canvas 사용의예시</title>
   </head>
   <body>
-    <h2>canvas</h2>
+    <h1> &ltCanvas&gt사용의예시 (과제 #03-02)</h1>
+    <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"></canvas>
+    <script>
+      var c = document.getElementById("myCanvas");
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+      ctx.moveTo(200, 0);
+      ctx.lineTo(0, 100);
+      ctx.stroke();
+    </script>
+    <p>웹프로그래밍(2) 과목, canvas 태그의 예제공간입니다.</p>
   </body>
 </html>
